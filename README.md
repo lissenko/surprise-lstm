@@ -15,6 +15,8 @@ pip install -e .
 
 [Download](https://github.com/lissenko/surprise-lstm/releases/download/v0.1.0/default_model.pth)
 
+**Training data.** The default model was trained on [Tegridy-MIDI-Dataset/Clean-Melodies](https://github.com/asigalov61/Tegridy-MIDI-Dataset/tree/master/Clean-Melodies).
+
 ## Quick Start
 
 ```py
