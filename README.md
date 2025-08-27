@@ -7,7 +7,7 @@ LSTM-based model of melodic surprise from MIDI.
 If you're working from this repository:
 
 ```bash
-git clone https://github.com/username/surprise-lstm.git
+git clone https://github.com/lissenko/surprise-lstm.git
 cd surprise-lstm
 pip install -r requirements.txt
 pip install -e .
