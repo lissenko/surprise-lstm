@@ -4,8 +4,6 @@ LSTM-based model of melodic surprise from MIDI.
 
 ## Installation
 
-If you're working from this repository:
-
 ```bash
 git clone https://github.com/lissenko/surprise-lstm.git
 cd surprise-lstm
