@@ -47,8 +47,6 @@ extra_note_distribution = result['extra_note_distrib']
   year         = {2025},
   month        = aug,
   type         = {Master's Thesis},
-  address      = {Barcelona, Spain},
-  note         = {Supervisors: Martin Rocamora, Manuel Anglada-Tort},
-  institution  = {Music Technology Group}
+  Supervisors  = {Martin Rocamora, Manuel Anglada-Tort},
 }
 ```
