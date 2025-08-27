@@ -1,0 +1,4 @@
+music21
+numpy
+pretty_midi
+torch

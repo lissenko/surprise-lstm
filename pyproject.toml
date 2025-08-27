@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "surprise-lstm"
+version = "0.1.0"
+description = "LSTM-based model of melodic surprise from MIDI."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["music", "MIDI", "LSTM", "surprise", "music21", "pretty_midi", "torch"]
+
+dependencies = [
+  "numpy>=1.22",
+  "torch>=2.0.0",
+  "pretty_midi>=0.2.10",
+  "music21>=8.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lissenko/surprise-lstm"
+Issues = "https://github.com/lissenko/surprise-lstm/issues"
+
+# Tell Hatchling exactly which package to put in the wheel (src layout!)
+[tool.hatch.build.targets.wheel]
+packages = ["src/surprise_lstm"]
+
+[tool.hatch.build]
+include = [
+  "README.md",
+  # only needed if you have data files outside the package discovery:
+  # "src/surprise_lstm/**",
+]
+
