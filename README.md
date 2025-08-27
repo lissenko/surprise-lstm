@@ -20,7 +20,7 @@ pip install -e .
 ```py
 from surprise_lstm import load_model_from_checkpoint, predict
 
-model = load_model_from_checkpoint('default_model.pth')
+model, device, _ = load_model_from_checkpoint('default_model.pth')
 midi_file = "/path/to/your/file"
 result = predict(model, midi_file)
 
