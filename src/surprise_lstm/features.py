@@ -72,12 +72,24 @@ def extract_melody_notes(midi_path, filter_sf=False, min_notes=5):
     except Exception as e:
         print(f"Error loading {midi_path}: {str(e)}")
         return []
+
+    instruments_with_notes = [inst for inst in pm.instruments if inst.notes]
+    if not instruments_with_notes:
+        raise ValueError(f"No notes found in MIDI file: {midi_path}")
+
+    for inst in instruments_with_notes:
+        notes_sorted = sorted(inst.notes, key=lambda x: x.start)
+        if not is_strictly_monophonic(notes_sorted):
+            inst_name = inst.name or f"program={inst.program}"
+            raise ValueError(
+                f"MIDI file is not strictly monophonic: instrument '{inst_name}' has overlapping notes."
+            )
     
     melodies = []
 
     tempo = pm.get_tempo_changes()[1][0]
     beat_duration = 60.0 / tempo
-    
+
     for instrument in pm.instruments:
         if not instrument.notes:
             continue
