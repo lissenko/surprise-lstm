@@ -13,6 +13,10 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
+## Pretrained model
+
+[Download](https://github.com/lissenko/surprise-lstm/releases/download/v0.1.0/default_model.pth)
+
 ## Quick Start
 
 ```py
