@@ -11,6 +11,7 @@ git clone https://github.com/username/surprise-lstm.git
 cd surprise-lstm
 pip install -r requirements.txt
 pip install -e .
+```
 
 ## Quick Start
 
@@ -38,6 +39,7 @@ extra_note_distribution = result['extra_note_distrib']
 
 ## Citing
 
+```
 @mastersthesis{lissenko2025,
   title        = {Computational Modeling of Musical Surprise: Deep Learning Estimation from Melodies},
   author       = {Tanguy Lissenko},
@@ -49,4 +51,4 @@ extra_note_distribution = result['extra_note_distrib']
   note         = {Supervisors: Martin Rocamora, Manuel Anglada-Tort},
   institution  = {Music Technology Group}
 }
-
+```
