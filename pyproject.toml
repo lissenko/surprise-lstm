@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "surprise-lstm"
-version = "0.2.0"
+version = "0.3.0"
 description = "LSTM-based model of melodic surprise from MIDI."
 readme = "README.md"
 requires-python = ">=3.9"
