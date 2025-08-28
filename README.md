@@ -45,7 +45,7 @@ extra_note_distribution = result['extra_note_distrib']
 
 ```
 @mastersthesis{lissenko2025,
-  title        = {Computational Modeling of Musical Surprise: Deep Learning Estimation from Melodies},
+  title        = {SurpriseLSTM: Neural Modeling of Musical Expectation and Surprise in Monophonic Melodies},
   author       = {Tanguy Lissenko},
   school       = {Music Technology Group, Master's in Sound and Music Computing},
   year         = {2025},
