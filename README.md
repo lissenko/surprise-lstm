@@ -41,7 +41,9 @@ extra_note_distribution = result['extra_note_distrib']
 - `avg_test_loss`: mean cross-entropy loss.
 - `extra_note_distrib`: length-128 probability vector for the imaginary next note after the melody.
 
-## Citing
+## Dissertation
+
+[Download](https://github.com/lissenko/surprise-lstm/releases/download/v0.1.0/surprise-lstm.pdf)
 
 ```
 @mastersthesis{lissenko2025,
